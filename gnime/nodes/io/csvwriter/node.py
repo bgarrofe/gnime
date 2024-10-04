@@ -1,9 +1,11 @@
 import pandas as pd
 
-from gnime.core import Node
+from gnime.nodes.node import input_table
 from .config import CSVWriterConfig
+from gnime.core import Node
 
 
+@input_table(name="Input Data", description="The data to be written to a CSV file.")
 class CSVWriterNode(Node):
 
     def configure(self, context):

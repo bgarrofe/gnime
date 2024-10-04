@@ -19,6 +19,6 @@ if __name__ == '__main__':
     inputs = {'input': None}
 
     result = runner.run(
-        'node_2-output', **inputs)
+        'node_2_output', **inputs)
 
     print(result)
